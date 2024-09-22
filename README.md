@@ -1,12 +1,12 @@
 # SwiftConverter ![SwiftConverter Logo](assets/icon.png)
 ## Descrição
 
-**SwiftConverter** é um conversor de moedas simples e rápido que permite a conversão de valores em Real (BRL) para Dólar (USD). O projeto é desenvolvido utilizando HTML, CSS e JavaScript, e faz uso da API AwesomeAPI para buscar o valor atual do dólar, garantindo que as conversões sejam sempre precisas e atualizadas.
+**SwiftConverter** é um conversor de moedas simples e rápido que permite a conversão de valores em Real (BRL) para Outras Moedas. O projeto é desenvolvido utilizando HTML, CSS e JavaScript, e faz uso da API AwesomeAPI para buscar o valor atual do dólar, garantindo que as conversões sejam sempre precisas e atualizadas.
 
 ## Funcionalidades
 
-- Conversão de valores de Real para Dólar em tempo real.
-- Busca automática do valor atual do dólar.
+- Conversão de valores de Real para outras diversas Moedas em tempo real.
+- Busca automática do valor atual das Moedas.
 - Interface amigável e responsiva.
 - Design clean e moderno.
 
@@ -15,7 +15,7 @@
 - **HTML5**: Estrutura básica do site.
 - **CSS3**: Estilização da interface do usuário.
 - **JavaScript**: Lógica de conversão e interação com a API.
-- **API AwesomeAPI**: Para obter o valor atual do dólar.
+- **API AwesomeAPI**: Para obter o valor atual das moedas.
 
 ## Como Usar
 
