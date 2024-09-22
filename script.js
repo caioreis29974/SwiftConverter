@@ -25,11 +25,15 @@ function converterMoeda() {
     const valorReal = parseFloat(document.getElementById('valorReal').value.replace(",", "."));
     const valorDolar = parseFloat(document.getElementById('valorDolarAtual').textContent);
 
+    const resultadoDiv = document.getElementById('resultado');
+
     if (!isNaN(valorReal) && !isNaN(valorDolar)) {
         const valorConvertido = valorReal / valorDolar;
-        document.getElementById('resultado').textContent = `R$ ${valorReal.toFixed(2).replace(".", ",")} = $ ${valorConvertido.toFixed(2)}`;
+        resultadoDiv.textContent = `R$ ${valorReal.toFixed(2).replace(".", ",")} = $ ${valorConvertido.toFixed(2)}`;
+        resultadoDiv.style.display = 'block';
     } else {
-        document.getElementById('resultado').textContent = 'Digite um valor válido.';
+        resultadoDiv.textContent = 'Digite um valor válido.';
+        resultadoDiv.style.display = 'block';
     }
 }
 
