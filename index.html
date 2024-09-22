@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SwiftConverter é um conversor de moedas simples e rápido de Real para Dólar.">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <title>SwiftConverter</title>
+</head>
+<body>
+    <img src="assets/dinheiro.gif" alt="Dinheiro Gif">
+    <div class="container">
+        <h1>SwiftConverter</h1>
+        <p>Conversor de Real para Dólar</p>
+        <input type="number" id="valorReal" placeholder="Digite o valor em reais">
+        <button onclick="converterMoeda()">Converter</button>
+
+        <div class="dollar-value">
+            <p>Valor atual do dólar: <span id="valorDolarAtual"></span></p>
+        </div>
+
+        <div class="conversion-result" id="resultado"></div>
+        
+    </div>
+</body>
+</html>
