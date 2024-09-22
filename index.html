@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,100 @@
     <link rel="stylesheet" href="style.css">
     <title>SwiftConverter</title>
 </head>
+
 <body>
     <img src="assets/dinheiro.gif" alt="Dinheiro Gif">
     <div class="container">
         <h1>SwiftConverter</h1>
-        <p>Conversor de Real para Dólar</p>
-        <input type="number" id="valorReal" placeholder="Digite o valor em reais">
+        <p>Conversor de Real para Outras Moedas</p>
+
+        <input type="text" id="valorReal" placeholder="Digite o valor em R$" oninput="formatarMoeda(this)">
+
+        <select id="moedaSelecionada">
+            <option value="USD">Dólar Americano (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+            <option value="CAD">Dólar Canadense (CAD)</option>
+            <option value="CHF">Franco Suíço (CHF)</option>
+            <option value="JPY">Iene Japonês (JPY)</option>
+            <option value="AUD">Dólar Australiano (AUD)</option>
+            <option value="CNY">Yuan Chinês (CNY)</option>
+            <option value="KWD">Dinar Kuwaitiano (KWD)</option>
+            <option value="OMR">Rial Omanense (OMR)</option>
+        </select>
+
         <button onclick="converterMoeda()">Converter</button>
 
-        <div class="dollar-value">
-            <p>Valor atual do dólar: <span id="valorDolarAtual"></span></p>
+        <div class="currency-value">
+            <p>Valor da moeda selecionada: <span id="valorMoedaAtual"></span></p>
         </div>
 
         <div class="conversion-result" id="resultado" style="display: none;"></div>
+    </div>
+
+    <div class="currency-table">
+        <h2>Moedas Mais Valorizadas do Mundo</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Moeda</th>
+                    <th>Valor em USD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dinar Kuwaitiano (KWD)</td>
+                    <td>3.30</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dinar Bahreinita (BHD)</td>
+                    <td>2.65</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rial Omanense (OMR)</td>
+                    <td>2.60</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dinar Jordaniano (JOD)</td>
+                    <td>1.41</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Libras Esterlinas (GBP)</td>
+                    <td>1.27</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Dólar das Ilhas Cayman (KYD)</td>
+                    <td>1.20</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Franco Suíço (CHF)</td>
+                    <td>1.08</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Euro (EUR)</td>
+                    <td>1.06</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Dólar Americano (USD)</td>
+                    <td>1.00</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Dólar Canadense (CAD)</td>
+                    <td>0.74</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script src="script.js"></script>

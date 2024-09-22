@@ -89,3 +89,79 @@ input:focus {
     margin-top: 10px;
     display: none;
 }
+
+.currency-table {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    margin-top: 20px;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.currency-table table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.301);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.currency-table h2{
+    margin: 10px 0;
+    color: var(--color2);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.171);
+    font-family: 'Oswald', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.currency-table th, .currency-table td {
+    padding: 12px;
+    border: 1px solid var(--color3);
+    text-align: center;
+    font-size: 14px;
+}
+
+.currency-table th {
+    background-color: var(--color1);
+    color: white;
+}
+
+.currency-table tbody tr:nth-child(even) {
+    background-color: var(--color3);
+}
+
+.currency-table tbody tr:hover {
+    background-color: var(--color2);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .currency-table table {
+        min-width: 100%;
+    }
+}
+
+.currency-table.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px double var(--color1);
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: var(--color1);
+    outline: none;
+}
